@@ -1,0 +1,63 @@
+<!--VANILLA JAVASCRIPT STOPWATCH-->
+<html>
+  <head>
+       
+      <style>
+          
+          @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+          body{
+              background-color:orange;
+              
+          }
+          h1{
+              text-transform:uppercase;font-family: 'Open Sans', sans-s;font-family: 'Open Sans', sans-serif;
+              color:white;
+
+          }
+          .buttons{
+            display:inline;
+              border-radius:2px;
+         
+          }
+          button{
+              width:200px;
+              border-radius:5px;
+              padding:15px;
+              background-color:orange;
+              color:white;
+              border:1px solid white;
+              
+          }
+          #container{
+text-align: center; }
+          button:hover{
+              @include transition;
+              background-color:white;
+              color:orange;
+          }
+          p{
+              font-size:3em;
+            font-family: 'Open Sans', sans-serif;
+              color:white;  
+          }
+      </style>
+    </head>
+<body>
+     <div id="container">
+         <div>
+    <h1>stopwatch</h1>
+    <br>
+    <h1>Vanilla Javascritp stopwatch</h1>
+         </div>
+         <br>
+         <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+         <div class="buttons">
+        <button id="start">Start</button>  
+        <button id="stop">Stop</button>
+      <button id="rest">Rest</button>
+         </div>
+         </div>
+    <script src="JSSTOPWATCH.JS">
+     </script>
+    </body>
+</html>
