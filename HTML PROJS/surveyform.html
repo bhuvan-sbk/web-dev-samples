@@ -1,0 +1,117 @@
+<html>
+ <head>
+    
+    <title>survey form</title>
+    </head>
+    <style>
+        body{
+            background-color:#F9DFA3; 
+        }
+        button{background-color: red;color: white}
+        .personaldetails{
+            border:1px solid black;text-align:center;border-radius:20px;width:700px;margin-left:400px;margin-top:30px;
+        }
+    </style>
+<body>
+    <div class="personaldetails">
+        <div>
+    <h1>Applications For permission To Date My Daughter </h1>
+    <p>Form is to be completed at least 21 days prior to date</p>
+        </div>
+        <form action="form.php" method="get">
+            <legend>Personal Details</legend>
+            <div>
+            <label id="name-label" for="name">Name:</label>
+                <input type="text" required id="name" placeholder="Enter name here"></div>
+            <div>
+           <label id="adress-label" for="Adress">Address:</label>
+                <input required placeholder="Enter adress here" ></div>
+            <div>
+            <label id="email-label" for="Email">
+            Email</label>
+            <input required placeholder="Enter email here" type="email"></div>
+            <div>
+            <label id="phoneno-label" for="phone number" > Phone Number:</label>
+                <input type="number" maxlength="10" placeholder="Enter 10 digit number"></div>
+            <div>
+            <label id="IQ-label">IQ:</label>
+            
+                <input type="number" required placeholder="Enter IQ here"><br>
+                <div class="gender">
+                 <label>Gender</label>
+            <input type="radio"  name="gender"> Male
+            <input type="radio" name="gender">Female
+                    <input type="radio" name="gender">other
+                </div>
+                <br>
+                <div>
+                <label>Date fo proposed Outign:<input type="date"></label>
+                
+                </div>
+            </div><br>
+         <!-------- checkboxes---->       
+               
+    <fieldset>
+     <legend>Check All that Apply</legend>
+          <input type="checkbox" name="tatoo" value="tatoo">I have tattoos and/or piercings <br>         
+        <input type="checkbox" name="tatoo"> I am more than 2 years older than my daugher<br>
+        <input type="checkbox" name="car" value="car">I own a panel van or v8 <br>
+        <input type="checkbox" name="work" value="work" checked>
+        I work full-time<br>
+        <input type="checkbox" name="parents" value="parents" checked>My parents arer rich<br>
+        <input type="checkbox" value="location" name="location" checked> Is the date at well lit public location
+                    </fieldset>
+                    
+                    <br>
+            
+ <!---------------Dropdown menus-->               
+            <fieldset>
+            <div>
+                <label>Political Persuasion:</label>
+                <select>
+        <option value="left wing">Left wing</option>
+        <option value="right wing">Rightwing</option>
+     <option value="consevative">conservative</option>            <option value="nazi" selected>Nazi</option>
+            
+                
+                </select>
+                <label for="politics">Edcational Level Completed</label>
+                <select>
+                 <option value="university">University</option>
+                 <option value="college"> college</option>
+                 <option value="high-school">High-school</option>
+                 <option value="None">None</option>
+                
+                </select>
+                </div> </fieldset><br>
+            <!---- Tex Areas--->
+                
+            <fieldset>
+                <legend>Essay Section</legend>
+                <div>
+                <p>In 50 words or more explain why you want to date my daughter</p>
+            <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter text Here"></textarea>               
+                </div>
+                <div>
+                <p>please upload contact details for 2 refereces</p>
+            <textarea name="user-message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>
+                
+                </div>
+        <p>Upload police 
+                Clearance 
+                certificate, Bank 
+                Statement and medicl certificates here:<button style="padding:8px;font-size:19">Attach fiels</button></p>
+    
+                </fieldset>
+             <div id="submitbutton">
+            <button type="submit" id="submit" style="padding:8px;font-size:19">Send you application</button>    
+                </div>
+            
+            
+            
+           
+        </form>
+    </div>
+    
+    </body>
+</html>
