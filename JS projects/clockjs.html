@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <style>
+            h6{display: inline}
+            body{background-color: #f16059}
+            #partTimeButton{
+                background-color:black;
+                color:white;
+                padding:10px
+                    
+            }
+            
+            .page{
+               width:80%;
+                max-width:960px;
+                margin:50px auto;
+                text-align:center;
+                background-color: #f16059;
+                border-radius:5px;
+            
+            }
+            body{
+                font:14/, 26px 'Bungee', Helvetica, Arial, sans-serif;
+                color:#222;
+                margin:0px;
+                padding:0px;
+                text-transform:uppercase;
+            }
+            header{
+                font-size:24px;
+                line-height:48px;
+            }
+        </style>
+    </head>
+  <body>
+      <div class="page" >
+     <div>
+      <h1>LOLCAT CLOCK</h1>
+      </div>
+      <div>
+        <h4>I CAN HAZ TIME?</h4>
+      <p id="showclock"></p>
+      </div>
+      
+      <img id="lolcatImage" src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/normalTime.jpg" alt="lolcat">
+      <br><br>
+     <div>
+        <h6>SET WAKE TIME</h6>
+         <select>
+           <option>1AM -2AM   </option>
+           <option>2AM -3AM   </option>
+           <option>3AM -4AM   </option>
+           <option>4AM -5AM   </option>
+           <option>5AM -6AM   </option>
+           <option>6AM -7AM   </option>
+           <option>7AM -8AM   </option>
+           <option>9AM -10AM   </option>
+           <option>10AM -11AM   </option>
+           <option>11AM -12PM  </option>
+           <option>1PM - 2PM  </option>
+           <option>2PM -3AM   </option>
+           <option>3PM -4PM   </option>
+           <option>4PM -5PM   </option>
+           <option>5PM -6PM   </option>
+           <option>6PM -7PM   </option>
+           <option>7PM -8PM   </option>
+           <option>8PM -9PM   </option>
+           <option>9PM -10PM   </option>
+           <option>10PM -11PM   </option>
+           <option>11PM -12PM   </option>
+           <br>
+           
+         
+         </select>
+      </div>
+      <div><br>
+      <h6>SET LUNCH TIME</h6>
+      <select>
+           <option>1AM -2AM   </option>
+           <option>2AM -3AM   </option>
+           <option>3AM -4AM   </option>
+           <option>4AM -5AM   </option>
+           <option>5AM -6AM   </option>
+           <option>6AM -7AM   </option>
+           <option>7AM -8AM   </option>
+           <option>9AM -10AM   </option>
+           <option>10AM -11AM   </option>
+           <option>11AM -12PM  </option>
+           <option>1PM - 2PM  </option>
+           <option>2PM -3AM   </option>
+           <option>3PM -4PM   </option>
+           <option>4PM -5PM   </option>
+           <option>5PM -6PM   </option>
+           <option>6PM -7PM   </option>
+           <option>7PM -8PM   </option>
+           <option>8PM -9PM   </option>
+           <option>9PM -10PM   </option>
+           <option>10PM -11PM   </option>
+           <option>11PM -12PM   </option>
+           
+           
+         
+         </select>
+      
+      </div>
+      <div><br>
+        <h6>SET NAP TIME</h6>
+          <select>
+           <option>1AM -2AM   </option>
+           <option>2AM -3AM   </option>
+           <option>3AM -4AM   </option>
+           <option>4AM -5AM   </option>
+           <option>5AM -6AM   </option>
+           <option>6AM -7AM   </option>
+           <option>7AM -8AM   </option>
+           <option>9AM -10AM   </option>
+           <option>10AM -11AM   </option>
+           <option>11AM -12PM  </option>
+           <option>1PM - 2PM  </option>
+           <option>2PM -3AM   </option>
+           <option>3PM -4PM   </option>
+           <option>4PM -5PM   </option>
+           <option>5PM -6PM   </option>
+           <option>6PM -7PM   </option>
+           <option>7PM -8PM   </option>
+           <option>8PM -9PM   </option>
+           <option>9PM -10PM   </option>
+           <option>10PM -11PM   </option>
+           <option>11PM -12PM   </option>
+           
+           
+         
+         </select>
+      
+      </div><br><br>
+      <button id="partTimeButton">PARTY TIME!</button>
+      <footer>
+        <p>&copy;SEAEAC 2020</p>
+      </footer>
+      </div>
+    <script type="text/javascript">
+      
+    var clock=setInterval(clocktiming,1000);
+      function clocktiming(){
+          var d=new Date();
+          var thapa=d.toLocaleTimeString();
+          document.getElementById('showclock').innerHTML=thapa;
+      }
+      
+      </script>
+    </body>
+
+
+</html>
